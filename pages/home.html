@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú | Chino's Pizza</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="brand d-flex align-items-center gap-2" href="../index.html">
+        <img src="../assets/img/logo.png" class="brand-logo" alt="Chino's Pizza">
+        <span class="brand-name">CHINO'S PIZZA</span>
+      </a>
+
+      <nav class="d-none d-md-flex gap-4 navlinks">
+        <a class="active" href="home.html">MENÚ</a>
+        <a href="promos.html">PROMOS</a>
+        <a href="location.html">UBICACIÓN</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <a href="login.html" class="btn btn-light btn-sm topbar-btn">👤 INICIAR SESIÓN</a>
+        <a href="cart.html" class="btn btn-outline-light btn-sm topbar-btn">
+          🛒 CARRITO <span id="cartCount" class="badge text-bg-danger ms-1">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+        <div>
+          <h1 class="h3 fw-bold mb-0">Menú</h1>
+          <p class="text-muted mb-0">Pizzas y complementos (bebidas, postres, extras).</p>
+        </div>
+
+        <div class="d-flex gap-2">
+          <input id="search" class="form-control form-control-sm" style="max-width: 260px;" placeholder="Buscar en el menú...">
+          <a href="cart.html" class="btn btn-danger btn-sm">Ir al carrito</a>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <ul class="nav nav-pills gap-2 mb-3" id="menuTabs">
+        <li class="nav-item"><button class="nav-link active" data-tab="Pizzas">Pizzas</button></li>
+        <li class="nav-item"><button class="nav-link" data-tab="Bebidas">Bebidas</button></li>
+        <li class="nav-item"><button class="nav-link" data-tab="Postres">Postres</button></li>
+        <li class="nav-item"><button class="nav-link" data-tab="Extras">Extras</button></li>
+      </ul>
+
+      <div class="row g-3" id="grid">
+        <!-- JS render -->
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 py-3">
+      <small>© 2025 Chino's Pizza • Proyecto escolar</small>
+      <small class="text-muted">Términos • Privacidad • Contacto</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/home.js"></script>
+</body>
+</html>

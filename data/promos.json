@@ -1,0 +1,32 @@
+[
+  {
+    "id": "PROMO-DEL-BARRIO",
+    "titulo": "Promo del Barrrio $199",
+    "descripcion": "Aplica en pizzas medianas seleccionadas. No acumulable.",
+    "codigo": "PROMOBARRIO199",
+    "tipo": "porcentaje",
+    "valor": 50,
+    "vigencia": "2025-12-31",
+    "imagen": "../assets/img/promo1.png"
+  },
+  {
+    "id": "PROMO-REFRESCO",
+    "titulo": "Refresco a $49",
+    "descripcion": "Válido comprando cualquier pizza grande o familiar.",
+    "codigo": "REF49",
+    "tipo": "fijo",
+    "valor": 20,
+    "vigencia": "2025-12-31",
+    "imagen": "../assets/img/promo3.png"
+  },
+  {
+    "id": "PROMO-FAMILIAR",
+    "titulo": "Combo Familiar",
+    "descripcion": "Pizza grande + alitas + refresco. Sujeto a disponibilidad.",
+    "codigo": "FAM10",
+    "tipo": "porcentaje",
+    "valor": 10,
+    "vigencia": "2025-12-31",
+    "imagen": "../assets/img/promo3.png"
+  }
+]

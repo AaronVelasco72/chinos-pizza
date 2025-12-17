@@ -1,0 +1,178 @@
+:root{
+  --blue: #0b78c5;     /* similar estructura pero NO el mismo azul */
+  --bg: #f3efe6;       /* fondo beige claro */
+  --text: #1a1a1a;
+}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.topbar{
+  background: var(--blue);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.brand{
+  text-decoration: none;
+  color: #fff;
+}
+.brand:hover{ color: #fff; }
+
+.brand-logo{
+  width: 75px;           /* más grande */
+  height: 75x;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 1px;          /* mucho menos blanco */
+  object-fit: contain;
+  display: block;
+}
+
+
+.brand-name{
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.navlinks a{
+  color: #eaf6ff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+}
+.navlinks a:hover{ text-decoration: underline; }
+
+.topbar-btn{
+  font-weight: 800;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+.page{
+  padding: 26px 0 40px;
+}
+
+.start-order{
+  margin: 18px 0 18px;
+}
+
+.title{
+  font-weight: 900;
+  letter-spacing: .6px;
+  margin: 0 0 10px;
+}
+
+.start-actions{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.or{
+  font-weight: 800;
+  color: #666;
+}
+
+.promos{
+  margin-top: 10px;
+}
+
+.promo-card{
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.promo-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.promo-wide{
+  max-height: 550px;
+}
+
+.footer{
+  border-top: 1px solid rgba(0,0,0,.08);
+  background: #fff;
+}
+
+
+/* PROMOS UI */
+.promo-ui{
+  width: 100%;
+  border: 0;
+  text-align: left;
+  padding: 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  cursor: pointer;
+}
+.promo-ui:focus{ outline: 3px solid rgba(255,0,0,.2); }
+
+.promo-ui-img{
+  height: 160px;
+  background: #eee;
+}
+.promo-ui-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.promo-ui-body{ padding: 12px; }
+.promo-ui-title{ font-weight: 900; font-size: 15px; }
+.promo-ui-desc{ color: #666; font-size: 12px; margin-top: 4px; }
+.promo-ui-code{ margin-top: 8px; font-size: 12px; }
+.promo-ui-code span{ font-weight: 900; }
+
+.mini-banner{
+  border-radius: 10px;
+  overflow: hidden;
+  height: 140px;
+  background: #eee;
+}
+.mini-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.coupon-box{
+  border: 1px dashed rgba(0,0,0,.2);
+  border-radius: 10px;
+  padding: 12px;
+  background: rgba(255,255,255,.6);
+}
+.coupon-code{
+  font-weight: 1000;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.navlinks a.active{
+  text-decoration: underline;
+}
+
+
+.item-card2{
+  border-radius:10px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.item-img2{ height: 170px; background:#eee; }
+.item-img2 img{ width:100%; height:100%; object-fit:cover; display:block; }

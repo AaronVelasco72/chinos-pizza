@@ -1,0 +1,26 @@
+[
+  {
+    "id": "BEB-01",
+    "categoria": "Bebidas",
+    "nombre": "Refresco 2L",
+    "descripcion": "Refresco bien frío.",
+    "precio": 49,
+    "imagen": "../assets/img/refresco.jpg"
+  },
+  {
+    "id": "POS-01",
+    "categoria": "Postres",
+    "nombre": "Brownie",
+    "descripcion": "Brownie de chocolate.",
+    "precio": 39,
+    "imagen": "../assets/img/brownie.jpg"
+  },
+  {
+    "id": "EXT-01",
+    "categoria": "Extras",
+    "nombre": "Aderezo Ranch",
+    "descripcion": "Ranch extra.",
+    "precio": 15,
+    "imagen": "../assets/img/ranch.jpg"
+  }
+]
