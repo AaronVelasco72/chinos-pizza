@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arma tu Pizza - Chino's Pizza</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/build.css">
+
+
+</head>
+
+<body>
+  <header class="topbar">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="brand d-flex align-items-center gap-2" href="../index.html">
+      <img src="../assets/img/logo.png.jpeg" class="brand-logo" alt="Chino's Pizza">
+      <span class="brand-name">CHINO'S PIZZA</span>
+    </a>
+
+    <nav class="d-none d-md-flex gap-4 navlinks">
+      <a href="home.html">ORDENA ONLINE</a>
+      <a href="home.html">MENÚ</a>
+      <a href="promos.html">PROMOS</a>
+      <a href="location.html">UBICACIÓN</a>
+    </nav>
+
+    <div class="d-flex align-items-center gap-2">
+      <a href="login.html" class="btn btn-light btn-sm topbar-btn">👤 INICIAR SESIÓN</a>
+      <a href="cart.html" class="btn btn-outline-light btn-sm topbar-btn">
+        🛒 CARRITO <span id="cartCount" class="badge text-bg-danger ms-1">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="container configurator-container">
+    <div class="row">
+      
+      <div class="col-lg-8">
+        
+        <div class="section-card">
+          <div class="section-header">1. TAMAÑO Y MASA</div>
+          <div class="size-selector">
+            <label class="size-option"><input type="radio" name="tamano" value="Mediana" class="d-none" checked><div class="size-circle">30</div><small>Mediana</small></label>
+            <label class="size-option"><input type="radio" name="tamano" value="Grande" class="d-none"><div class="size-circle">35</div><small>Grande</small></label>
+            <label class="size-option"><input type="radio" name="tamano" value="Dominator" class="d-none"><div class="size-circle">45</div><small>Dominator</small></label>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">2. QUESO Y SALSA</div>
+          <div class="p-3">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="form-check"><input class="form-check-input" type="checkbox" checked id="salsaCheck"><label class="form-check-label fw-bold">Salsa de Tomate</label></div>
+              <select class="form-select form-select-sm w-auto" id="salsaQty"><option>Normal</option><option>Extra</option></select>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="form-check"><input class="form-check-input" type="checkbox" checked id="quesoCheck"><label class="form-check-label fw-bold">Queso Mozzarella</label></div>
+              <select class="form-select form-select-sm w-auto" id="quesoQty"><option>Normal</option><option>Extra</option></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">3. INGREDIENTES</div>
+          <div class="p-3">
+            <h6 class="text-primary fw-bold small">CARNES</h6>
+            <div class="ingredient-grid mb-3">
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Pepperoni" data-img="https://www.svgviewer.dev/static-svgs/435498/pepperoni.svg"><label class="form-check-label">Pepperoni</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Carne molida" data-img="https://img.icons8.com/plasticine/1200/ground-beef.jpg"><label class="form-check-label">Carne molida</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Chorizo" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsD7N4tzVfCq9NHPYU5II6JPX29CFS8uOO9w&s"><label class="form-check-label">Chorizo</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Salami" data-img="https://www.svgrepo.com/show/75889/salami.svg"><label class="form-check-label">Salami</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Jamón" data-img="https://pngimg.com/d/ham_PNG1.png"><label class="form-check-label">Jamón</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Tocino" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkEoLHB5tIiiSGSHCVIx0EAG25xRrwavZh0A&s"><label class="form-check-label">Tocino</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Pollo" data-img="https://us.123rf.com/450wm/yupiramos/yupiramos1802/yupiramos180225385/96072185-delicioso-muslo-de-pollo-icono-de-la-ilustraci%C3%B3n-vectorial-de-dise%C3%B1o.jpg?ver=6"><label class="form-check-label">Pollo</label></div>
+            </div>
+            <h6 class="text-primary fw-bold small">VEGETALES Y OTROS</h6>
+            <div class="ingredient-grid">
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Champiñones" data-img="https://static.vecteezy.com/system/resources/previews/014/388/394/non_2x/champignon-with-shadow-icon-flat-style-vector.jpg"><label class="form-check-label">Champiñones</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Piña" data-img="https://pngimg.com/d/pineapple_PNG2734.png"><label class="form-check-label">Piña</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Pimiento" data-img="https://pngimg.com/d/pepper_PNG3242.png"><label class="form-check-label">Pimiento</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Aceitunas" data-img="https://img.icons8.com/color/1200/olive.jpg"><label class="form-check-label">Aceitunas</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Jalapeños" data-img="https://pngimg.com/d/jalapeno_PNG3.png"><label class="form-check-label">Jalapeños</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Cebolla" data-img="https://pngimg.com/d/onion_PNG99199.png"><label class="form-check-label">Cebolla</label></div>
+              <div class="form-check"><input class="form-check-input ing-check" type="checkbox" value="Queso cheddar" data-img="https://pngimg.com/d/cheese_PNG10.png"><label class="form-check-label">Queso cheddar</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="summary-card text-center">
+          <h4 id="resumenTitulo" class="fw-bold">Pizza Mediana</h4>
+          <p id="resumenDetalle" class="small text-muted mb-0">Salsa: Normal, Queso: Normal</p>
+          <div id="resumenLista" class="small fw-bold text-primary my-2"></div>
+
+          <div class="pizza-visual-wrapper">
+            <div class="pizza-container">
+              <div class="pizza-base"></div>
+              <div class="pizza-sauce" id="pizza-sauce"></div>
+              <div class="pizza-cheese" id="pizza-cheese"></div>
+              <div id="pizza-ingredientes"></div>
+            </div>
+          </div>
+
+          <button class="btn-agregar">AGREGAR AL CARRITO</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer bg-white border-top">
+    <div class="container py-3"><small>© 2025 Chino's Pizza • Proyecto Escolar</small></div>
+  </footer>
+
+  <script>
+    const pizzaIngredientes = document.getElementById('pizza-ingredientes');
+    
+    // Posiciones predefinidas para distribuir ingredientes equitativamente
+    const posiciones = [
+      // Anillo exterior (12 posiciones)
+      { x: 50, y: 15 }, { x: 70, y: 20 }, { x: 85, y: 35 }, { x: 85, y: 50 },
+      { x: 85, y: 65 }, { x: 70, y: 80 }, { x: 50, y: 85 }, { x: 30, y: 80 },
+      { x: 15, y: 65 }, { x: 15, y: 50 }, { x: 15, y: 35 }, { x: 30, y: 20 },
+      // Anillo medio (8 posiciones)
+      { x: 50, y: 30 }, { x: 70, y: 35 }, { x: 70, y: 50 }, { x: 70, y: 65 },
+      { x: 50, y: 70 }, { x: 30, y: 65 }, { x: 30, y: 50 }, { x: 30, y: 35 },
+      // Centro (4 posiciones)
+      { x: 45, y: 45 }, { x: 55, y: 45 }, { x: 45, y: 55 }, { x: 55, y: 55 }
+    ];
+
+    function actualizarPizza() {
+      // 1. Textos
+      const tamano = document.querySelector('input[name="tamano"]:checked').value;
+      document.getElementById('resumenTitulo').innerText = `Pizza ${tamano}`;
+      
+      const sOn = document.getElementById('salsaCheck').checked;
+      const qOn = document.getElementById('quesoCheck').checked;
+      const salsaCant = document.getElementById('salsaQty').value;
+      const quesoCant = document.getElementById('quesoQty').value;
+      
+      document.getElementById('resumenDetalle').innerText = `Salsa: ${sOn ? salsaCant : 'No'}, Queso: ${qOn ? quesoCant : 'No'}`;
+
+      // 2. Salsa y Queso Visual
+      const pizzaSalsa = document.getElementById('pizza-sauce');
+      const pizzaQueso = document.getElementById('pizza-cheese');
+      
+      pizzaSalsa.style.display = sOn ? 'block' : 'none';
+      pizzaQueso.style.display = qOn ? 'block' : 'none';
+      
+      if (quesoCant === 'Extra') {
+        pizzaQueso.classList.add('pizza-cheese-extra');
+      } else {
+        pizzaQueso.classList.remove('pizza-cheese-extra');
+      }
+
+      // 3. Ingredientes Dinámicos con imágenes
+      pizzaIngredientes.innerHTML = '';
+      let lista = [];
+      
+      const ingredientesSeleccionados = Array.from(document.querySelectorAll('.ing-check:checked'));
+      
+      ingredientesSeleccionados.forEach((cb, index) => {
+        lista.push(cb.value);
+        const imgUrl = cb.dataset.img;
+        
+        // Calcular cuántos items de este ingrediente mostrar (entre 6 y 8)
+        const cantidadItems = 6 + (index % 3);
+        
+        // Distribuir este ingrediente en posiciones específicas
+        for(let i = 0; i < cantidadItems; i++) {
+          // Seleccionar una posición basada en el ingrediente y el índice
+          const posIndex = (index * 7 + i * 3) % posiciones.length;
+          const pos = posiciones[posIndex];
+          
+          // Agregar pequeña variación aleatoria para que no sea tan rígido
+          const offsetX = (Math.random() - 0.5) * 4;
+          const offsetY = (Math.random() - 0.5) * 4;
+          
+          const item = document.createElement('div');
+          item.className = 'ingredient-item';
+          item.style.left = `${pos.x + offsetX}%`;
+          item.style.top = `${pos.y + offsetY}%`;
+          item.style.backgroundImage = `url('${imgUrl}')`;
+          item.style.transform = `translate(-50%, -50%) rotate(${Math.random() * 360}deg)`;
+          
+          pizzaIngredientes.appendChild(item);
+        }
+      });
+      
+      document.getElementById('resumenLista').innerText = lista.length > 0 ? lista.join(', ') : 'Sin ingredientes adicionales';
+    }
+
+    document.querySelectorAll('input, select').forEach(el => el.addEventListener('change', actualizarPizza));
+    actualizarPizza();
+  </script>
+</body>
+</html>
