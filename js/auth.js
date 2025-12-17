@@ -70,56 +70,62 @@ registerForm?.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const fd = new FormData(registerForm);
-  const name = String(fd.get("name") || "").trim();
-  const email = normalizeEmail(fd.get("email"));
-  const password = String(fd.get("password") || "");
-  const confirm = String(fd.get("confirm") || "");
-
-  if (!name || !email || !password) return msg(registerMsg, "Completa todos los campos.", false);
-  if (password.length < 6) return msg(registerMsg, "La contraseña debe tener al menos 6 caracteres.", false);
-  if (password !== confirm) return msg(registerMsg, "Las contraseñas no coinciden.", false);
-
-  const users = getUsers();
-  if (users.some(u => normalizeEmail(u.email) === email)) {
-    return msg(registerMsg, "Ese correo ya está registrado. Inicia sesión.", false);
-  }
-
   const newUser = {
-    id: crypto?.randomUUID ? crypto.randomUUID() : String(Date.now()),
-    name,
-    email,
-    password // demo (luego backend con hash)
+    name: fd.get("name"),
+    email: fd.get("email").trim().toLowerCase(),
+    phone: fd.get("phone"),
+    password: fd.get("password") // En un proyecto real, aquí usaríamos cifrado
   };
 
-  users.push(newUser);
-  setUsers(users);
-
-  msg(registerMsg, "Cuenta creada ✅ Ahora inicia sesión.", true);
-  registerForm.reset();
-  showLogin();
+  fetch('http://localhost:3000/api/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(newUser)
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      msg(registerMsg, "¡Cuenta creada! Redirigiendo al login...", true);
+      setTimeout(() => {
+        window.location.href = "login.html"; //
+      }, 1500);
+    } else {
+      msg(registerMsg, data.message, false);
+    }
+  })
+  .catch(err => msg(registerMsg, "Error de conexión con el servidor", false));
 });
-
 // Login
 loginForm?.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const fd = new FormData(loginForm);
-  const email = normalizeEmail(fd.get("email"));
-  const password = String(fd.get("password") || "");
+  const email = fd.get("email").trim().toLowerCase();
+  const password = fd.get("password");
 
-  const users = getUsers();
-  const user = users.find(u => normalizeEmail(u.email) === email);
-
-  if (!user || user.password !== password) {
-    return msg(loginMsg, "Correo o contraseña incorrectos.", false);
-  }
-
-  setSessionUser(user);
-  msg(loginMsg, `Bienvenido, ${user.name} ✅`, true);
-
-  setTimeout(() => {
-    window.location.href = "home.html";
-  }, 600);
+  // Petición al servidor de Node.js que creamos en server.js
+  fetch('http://localhost:3000/api/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      // Guardamos la sesión en el navegador con los datos reales de la BD
+      localStorage.setItem("sessionUser", JSON.stringify(data.user));
+      msg(loginMsg, `Bienvenido, ${data.user.name} ✅`, true);
+      
+      setTimeout(() => {
+        window.location.href = "home.html"; // Redirige al menú principal
+      }, 600);
+    } else {
+      msg(loginMsg, data.message, false);
+    }
+  })
+  .catch(err => {
+    msg(loginMsg, "Error de conexión: ¿Olvidaste encender el servidor?", false);
+  });
 });
 
 // Abre en modo login por defecto
