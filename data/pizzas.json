@@ -4,20 +4,85 @@
     "nombre": "Pepperoni Clásica",
     "descripcion": "Pepperoni, queso mozzarella y salsa.",
     "precio": 129,
-    "imagen": "../assets/img/pizza-pepperoni.jpg"
+    "imagen": "../assets/img/pizzapepperoni.jpg"
   },
   {
     "id": "PIZ-02",
     "nombre": "Hawaiana",
     "descripcion": "Jamón, piña y queso mozzarella.",
     "precio": 139,
-    "imagen": "../assets/img/pizza-hawaiana.jpg"
+    "imagen": "../assets/img/pizzahawaiana.jpg"
   },
   {
     "id": "PIZ-03",
     "nombre": "Mexicana",
     "descripcion": "Chorizo, jalapeño y cebolla.",
     "precio": 149,
-    "imagen": "../assets/img/pizza-mexicana.jpg"
-  }
+    "imagen": "../assets/img/pizzamexicana.jpg"
+  },
+  {
+    "id": "PIZ-04",
+    "nombre": "Cuatro Quesos",
+    "descripcion": "Mozzarella, parmesano, gouda y queso azul.",
+    "precio": 149,
+    "imagen": "../assets/img/pizzacuatroquesos.jpg"
+  },
+  {
+    "id": "PIZ-05",
+    "nombre": "Jamón & Queso",
+    "descripcion": "Jamón, queso mozzarella y salsa.",
+    "precio": 129,
+    "imagen": "../assets/img/pizzajamonyqueso.jpg"
+  },
+  {
+    "id": "PIZ-06",
+    "nombre": "Margarita",
+    "descripcion": "Mozzarella, jitomate y albahaca.",
+    "precio": 139,
+    "imagen": "../assets/img/pizzamargarita.jpg"
+  },
+  {
+    "id": "PIZ-07",
+    "nombre": "Carnes Frías",
+    "descripcion": "Pepperoni, salchicha y jamón.",
+    "precio": 159,
+    "imagen": "../assets/img/pizzacarnesfrias.jpg"
+  },
+  {
+    "id": "PIZ-08",
+    "nombre": "BBQ Chicken",
+    "descripcion": "Pollo, salsa BBQ, cebolla y mozzarella.",
+    "precio": 159,
+    "imagen": "../assets/img/pizzabbqchicken.jpg"
+  },
+  {
+    "id": "PIZ-09",
+    "nombre": "Pastor",
+    "descripcion": "Carne al pastor, piña y cebolla.",
+    "precio": 159,
+    "imagen": "../assets/img/pizzapastor.jpg"
+  },
+  {
+    "id": "PIZ-10",
+    "nombre": "Suprema",
+    "descripcion": "Pepperoni, champiñón, pimiento y cebolla.",
+    "precio": 169,
+    "imagen": "../assets/img/pizzasuprema.jpg"
+  },
+  {
+    "id": "PIZ-11",
+    "nombre": "Vegetariana",
+    "descripcion": "Champiñón, pimiento, cebolla y aceitunas.",
+    "precio": 149,
+    "imagen": "../assets/img/pizzavegetariana.jpg"
+  },
+  {
+  "id": "PIZ-12",
+  "nombre": "Champiñones & Queso",
+  "descripcion": "Champiñones frescos y queso mozzarella.",
+  "precio": 139,
+  "imagen": "../assets/img/pizzachampinonesqueso.jpg"
+}
+
+  
 ]
