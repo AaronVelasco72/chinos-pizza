@@ -4,29 +4,66 @@
     "titulo": "Promo del Barrrio $199",
     "descripcion": "Aplica en pizzas medianas seleccionadas. No acumulable.",
     "codigo": "PROMOBARRIO199",
-    "tipo": "porcentaje",
-    "valor": 50,
+    "tipo": "fijo",
+    "valor": 199,
     "vigencia": "2025-12-31",
     "imagen": "../assets/img/promo1.png"
   },
   {
-    "id": "PROMO-REFRESCO",
-    "titulo": "Refresco a $49",
-    "descripcion": "Válido comprando cualquier pizza grande o familiar.",
-    "codigo": "REF49",
-    "tipo": "fijo",
-    "valor": 20,
-    "vigencia": "2025-12-31",
-    "imagen": "../assets/img/promo3.png"
+  "id": "PROMO-IMPERIO-ESPECIALIDAD",
+  "titulo": "El Imperio de la Especialidad",
+  "descripcion": "30% OFF en pizza grande de especialidad (solo en línea). No acumulable.",
+  "codigo": "IMPERIO30",
+  "tipo": "porcentaje",
+  "valor": 30,
+
+ "vigencia": "2025-12-10 a 2025-12-20",
+
+
+  "acumulable": false,
+  "canal": "online",
+  "aplica": {
+    "tamano": "grande",
+    "categoria": "especialidad"
   },
-  {
-    "id": "PROMO-FAMILIAR",
-    "titulo": "Combo Familiar",
-    "descripcion": "Pizza grande + alitas + refresco. Sujeto a disponibilidad.",
-    "codigo": "FAM10",
-    "tipo": "porcentaje",
-    "valor": 10,
-    "vigencia": "2025-12-31",
-    "imagen": "../assets/img/promo3.png"
-  }
+
+  "imagen": "../assets/img/Promo2.png"
+},
+{
+  "id": "PROMO-2X1-GRANDES",
+  "titulo": "2x1 en Pizzas Grandes",
+  "descripcion": "2x1 en pizzas grandes. Todos los días. Desde $199 MXN.",
+  "codigo": "2X1GRANDES",
+  "tipo": "2x1",
+  "valor": 1,
+  "vigencia": "Todos los días",
+  "acumulable": false,
+  "canal": "online",
+  "aplica": {
+    "tamano": "grande"
+  },
+  "imagen": "../assets/img/promohorizontal.png"
+},
+{
+  "id": "PROMO-LUNES-DULCE",
+  "titulo": "Lunes Dulce Imperial",
+  "descripcion": "Todos los postres a $50 MXN. Válido todos los lunes de diciembre.",
+  "codigo": "DULCE50",
+  "tipo": "fijo",
+  "valor": 50,
+
+  "vigencia": "Lunes de diciembre 2025",
+
+  "acumulable": true,
+  "canal": "online",
+  "aplica": {
+    "categoria": "postres",
+    "dia": "lunes",
+    "mes": "diciembre"
+  },
+
+  "imagen": "../assets/img/promo3.png"
+}
+
+
 ]

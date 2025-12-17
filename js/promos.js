@@ -53,7 +53,8 @@ function showDetail(p) {
   detailTitle.textContent = p.titulo;
   detailDesc.textContent = p.descripcion;
   detailCode.textContent = p.codigo;
-  detailVigencia.textContent = `Vigencia: ${p.vigencia}`;
+detailVigencia.textContent =
+  `Vigencia: ${p.vigencia ?? ((p.vigencia_inicio && p.vigencia_fin) ? `${p.vigencia_inicio} a ${p.vigencia_fin}` : "Sin vigencia")}`;
 }
 
 btnCopy?.addEventListener("click", async () => {
