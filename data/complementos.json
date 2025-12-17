@@ -7,6 +7,49 @@
     "precio": 49,
     "imagen": "../assets/img/refresco.jpg"
   },
+    {
+    "id": "BEB-02",
+    "categoria": "Bebidas",
+    "nombre": "Refresco 600ml",
+    "descripcion": "Refresco individual.",
+    "precio": 29,
+    "imagen": "../assets/img/refresco-600.jpg"
+  },
+  {
+    "id": "BEB-03",
+    "categoria": "Bebidas",
+    "nombre": "Agua Natural 600ml",
+    "descripcion": "Agua purificada.",
+    "precio": 20,
+    "imagen": "../assets/img/agua.jpg"
+  },
+  {
+    "id": "BEB-04",
+    "categoria": "Bebidas",
+    "nombre": "Agua Mineral",
+    "descripcion": "Agua mineral bien fría.",
+    "precio": 25,
+    "imagen": "../assets/img/agua-mineral.jpg"
+  },
+  {
+    "id": "BEB-05",
+    "categoria": "Bebidas",
+    "nombre": "Té Helado",
+    "descripcion": "Té helado sabor limón.",
+    "precio": 25,
+    "imagen": "../assets/img/te-helado.jpg"
+  },
+  {
+    "id": "BEB-06",
+    "categoria": "Bebidas",
+    "nombre": "Jugo Natural",
+    "descripcion": "Jugo natural del día.",
+    "precio": 30,
+    "imagen": "../assets/img/jugo.jpg"
+  },
+
+
+
   {
     "id": "POS-01",
     "categoria": "Postres",
@@ -16,11 +59,94 @@
     "imagen": "../assets/img/brownie.jpg"
   },
   {
+    "id": "POS-02",
+    "categoria": "Postres",
+    "nombre": "Brownie con Helado",
+    "descripcion": "Brownie caliente con helado.",
+    "precio": 59,
+    "imagen": "../assets/img/brownie-helado.jpg"
+  },
+  {
+    "id": "POS-03",
+    "categoria": "Postres",
+    "nombre": "Pay de Queso",
+    "descripcion": "Rebanada de pay de queso.",
+    "precio": 45,
+    "imagen": "../assets/img/pay-queso.jpg"
+  },
+  {
+    "id": "POS-04",
+    "categoria": "Postres",
+    "nombre": "Roles de Canela",
+    "descripcion": "Roles horneados con glaseado.",
+    "precio": 49,
+    "imagen": "../assets/img/roles.jpg"
+  },
+  {
+    "id": "POS-05",
+    "categoria": "Postres",
+    "nombre": "Churros",
+    "descripcion": "Churros espolvoreados con azúcar.",
+    "precio": 35,
+    "imagen": "../assets/img/churros.jpg"
+  },
+  {
+    "id": "POS-06",
+    "categoria": "Postres",
+    "nombre": "Helado",
+    "descripcion": "Vaso de helado.",
+    "precio": 30,
+    "imagen": "../assets/img/helado.jpg"
+  },
+
+
+
+  {
     "id": "EXT-01",
     "categoria": "Extras",
     "nombre": "Aderezo Ranch",
     "descripcion": "Ranch extra.",
     "precio": 15,
     "imagen": "../assets/img/ranch.jpg"
+  },
+   {
+    "id": "EXT-02",
+    "categoria": "Extras",
+    "nombre": "Salsa BBQ",
+    "descripcion": "Salsa BBQ extra.",
+    "precio": 15,
+    "imagen": "../assets/img/bbq.jpg"
+  },
+  {
+    "id": "EXT-03",
+    "categoria": "Extras",
+    "nombre": "Salsa Picante",
+    "descripcion": "Salsa picante.",
+    "precio": 10,
+    "imagen": "../assets/img/picante.jpg"
+  },
+  {
+    "id": "EXT-04",
+    "categoria": "Extras",
+    "nombre": "Queso Extra",
+    "descripcion": "Porción extra de queso.",
+    "precio": 20,
+    "imagen": "../assets/img/queso-extra.jpg"
+  },
+  {
+    "id": "EXT-05",
+    "categoria": "Extras",
+    "nombre": "Orilla Rellena",
+    "descripcion": "Orilla rellena de queso.",
+    "precio": 35,
+    "imagen": "../assets/img/orilla.jpg"
+  },
+  {
+    "id": "EXT-06",
+    "categoria": "Extras",
+    "nombre": "Chile en Polvo",
+    "descripcion": "Chile en polvo extra.",
+    "precio": 5,
+    "imagen": "../assets/img/chile.jpg"
   }
 ]
